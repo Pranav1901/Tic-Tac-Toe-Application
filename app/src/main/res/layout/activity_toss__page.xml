@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="@+id/toss_button" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/toss_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -60,23 +60,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/startgame"
+        android:id="@+id/start_game_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/new_rocker"
-        android:onClick="startGame"
-        android:text="start game"
+        android:text="START GAME"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textStyle="bold"
         app:cornerRadius="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/winner_name"
-        app:layout_constraintVertical_bias="0.0" />
-
+        tools:visibility="invisible"
+        android:onClick="startGame"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

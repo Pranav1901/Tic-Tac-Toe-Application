@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_toss__page.*
@@ -18,14 +19,15 @@ class Toss_Page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_toss__page)
+        var startButton = findViewById(R.id.start_game_button )as Button
         val tossButton = findViewById(R.id.toss_button) as ImageButton
         var x =rand(1,2)
         var winner = ""
+        startButton.setVisibility(View.INVISIBLE)
         tossButton.setOnClickListener{
-            Toast.makeText(this, "button is clicked", Toast.LENGTH_LONG).show()
             if(tossButton.isPressed){
                 tossButton.setImageResource(R.drawable.coin)
-
+                startButton.setVisibility(View.VISIBLE)
                 if(x == 1) {
                     state_text.text = "Player 1"
                     WINNER = "Player 1"
