@@ -144,7 +144,7 @@
 
     <TextView
         android:id="@+id/player_name"
-        android:layout_width="174dp"
+        android:layout_width="254dp"
         android:layout_height="60dp"
         android:fontFamily="@font/new_rocker"
         android:textAlignment="center"
