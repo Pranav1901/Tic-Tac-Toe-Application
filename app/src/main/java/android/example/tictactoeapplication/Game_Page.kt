@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game__page.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class Game_Page : AppCompatActivity() {
     companion object{
@@ -18,6 +20,7 @@ class Game_Page : AppCompatActivity() {
     }
     var countOfXO = 0
     var toss_win = ""
+    var temp = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game__page)
@@ -27,9 +30,17 @@ class Game_Page : AppCompatActivity() {
         if (tossWinner != null) {
             toss_win = tossWinner
         }
+        if(toss_win == "Player 1"){    //checking which player is the toss winner
+            temp = "Player 2"
+        }
+        else{
+            temp = "Player 1"
+        }
 
+        toss_l.text = "$temp"
+        toss_w.text = "$toss_win"
 
-        player_name.text = "$tossWinner make first move"     //displaying the name of tosswinner to start the game
+          player_name.text = "$tossWinner make first move"     //displaying the name of tosswinner to start the game
 
 
         val gridButton1 = findViewById(R.id.gridButton_1) as ImageButton
@@ -267,13 +278,8 @@ class Game_Page : AppCompatActivity() {
     }
     fun sendResult(){                //method to send result of the game state(game Winner / draw) to result screen
         val intent = Intent(this,ResultPage::class.java)   //storing intent of result screen
-        var temp = ""         //storing toss looser
-        if(toss_win == "Player 1"){    //checking which player is the toss winner
-            temp = "Player 2"
-        }
-        else{
-            temp = "Player 1"
-        }
+                //storing toss looser
+
         if(countOfXO>=9) {         //condition to check the last move
             if(rowChecked()||colchecked()||daigonalchecked()){     //condition to check if toss winner wins in last move
                 intent.putExtra(ResultPage.RESULT, toss_win)
