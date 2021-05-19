@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Toss_Page">
+    tools:context=".TossPage">
 
 
     <TextView
@@ -31,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.35"
-        app:srcCompat="@drawable/tosslogo" />
+        app:srcCompat="@drawable/tosslogo"
+        android:contentDescription="@string/toss_button" />
 
     <TextView
         android:id="@+id/state_text"
@@ -51,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/new_rocker"
-        android:text="Lets have a toss"
+        android:text="@string/lets_have_a_toss"
         android:textAppearance="@style/CardView.Light"
         android:textColor="#FCF200"
         android:textSize="48sp"
@@ -65,7 +66,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/yellow"
         android:fontFamily="@font/new_rocker"
-        android:text="START GAME"
+        android:text="@string/start_game"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:cornerRadius="38dp"

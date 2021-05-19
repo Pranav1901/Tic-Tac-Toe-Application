@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/new_rocker"
-        android:text="Tic Tac Toe"
+        android:text="@string/tic_tac_toe"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,7 +42,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/xo21" />
+        app:srcCompat="@drawable/xo21"
+        android:contentDescription="@string/xo_image" />
 
     <Button
         android:id="@+id/playbutton"
@@ -52,7 +53,7 @@
         android:backgroundTint="@color/black"
         android:fontFamily="@font/new_rocker"
         android:onClick="goToToss"
-        android:text="PLAY"
+        android:text="@string/play"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="24sp"
