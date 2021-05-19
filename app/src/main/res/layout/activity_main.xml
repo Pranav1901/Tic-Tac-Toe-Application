@@ -17,39 +17,40 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="80dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/new_rocker"
         android:text="@string/tic_tac_toe"
         android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_width="247dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/xo_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/xo21"
-        android:contentDescription="@string/xo_image" />
+        app:srcCompat="@drawable/xo21" />
 
     <Button
         android:id="@+id/playbutton"
-        android:layout_width="253dp"
+        android:layout_width="218dp"
         android:layout_height="63dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/new_rocker"
         android:onClick="goToToss"
@@ -59,7 +60,7 @@
         android:textSize="24sp"
         app:cornerRadius="38dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

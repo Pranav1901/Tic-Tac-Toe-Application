@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToeApplication">
-        <activity android:name=".Game_Page"></activity>
+        <activity android:name=".ResultPage"></activity>
+        <activity android:name=".Game_Page" />
         <activity android:name=".TossPage" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -6,4 +6,6 @@
     <string name="tic_tac_toe">Tic Tac Toe</string>
     <string name="xo_image">XO Image</string>
     <string name="play">PLAY</string>
+    <string name="and_the_winner_of_the_match_is">and_the_winner_of_the_match_is</string>
+    <string name="rematch">rematch</string>
 </resources>
