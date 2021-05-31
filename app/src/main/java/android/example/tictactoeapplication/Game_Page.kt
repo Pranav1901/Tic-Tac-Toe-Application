@@ -299,7 +299,8 @@ class Game_Page : AppCompatActivity() {
             intent.putExtra(ResultPage.RESULT, toss_win)
         }
 
-        startActivity(intent)        //starting the next activity
+        startActivity(intent) //starting the next activity
+        finish()
     }
 
     private fun daigonalchecked(): Boolean {        //method to check winning case(all images are same) of diagonals
